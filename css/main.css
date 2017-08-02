@@ -672,7 +672,7 @@ ul.social-buttons li a:active {
   margin-bottom: 15px;
   font-size: 3em;
 }
-.portfolio-modal .modal-content p {
+.portfolio-modal .modal-content h4 {
   margin-bottom: 30px;
 }
 .portfolio-modal .modal-content p.item-intro {
@@ -743,4 +743,19 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+.techno ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin-top: 25px;
+}
+.techno li {
+  color: #ffffff;
+  background-color: #9c9c9c;
+  font-size: small;
+  padding: 5px;
+  margin: 0 5px;
+}
+.no-bullet {
+  list-style-type: none;
 }
