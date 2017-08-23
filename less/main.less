@@ -134,6 +134,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .navbar-brand {
+      font-size: 2em;
+    }
+
+  .img-phone {
+    max-width: 50%;
+  }
+
+  .separator {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -143,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: padding 0.3s;
     border: none;
     .navbar-brand {
-      font-size: 5em;
+      font-size: 3em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
@@ -153,7 +169,6 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-
 // Navbar Change on Scroll
 
 @media (min-width: 768px) {
@@ -162,6 +177,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 0;
     .navbar-brand {
       font-size: 3em;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-custom {
+    .navbar-brand {
+      font-size: 4em;
     }
   }
 }
@@ -426,6 +449,21 @@ section {
   }
 }
 
+@media (min-width: 320px) {
+  .timeline {
+    > li {
+      .timeline-image {
+        h4 {
+          font-size: 9px;
+          margin-top: 20%;
+          line-height: 10px;
+        }
+      }
+    }
+  }
+
+}
+
 @media (min-width: 768px) {
   .timeline {
     &:before {
@@ -446,9 +484,9 @@ section {
         left: 50%;
         margin-left: -50px;
         h4 {
-          font-size: 13px;
-          margin-top: 16px;
-          line-height: 18px;
+          font-size: 10px;
+          margin-top: 30%;
+          line-height: 13px;
         }
       }
       &.timeline-inverted > .timeline-panel {
@@ -472,9 +510,9 @@ section {
         height: 150px;
         margin-left: -75px;
         h4 {
-          font-size: 18px;
-          margin-top: 30px;
-          line-height: 26px;
+          font-size: 16px;
+          margin-top:32%;
+          line-height:18px;
         }
       }
       &.timeline-inverted > .timeline-panel {
@@ -496,7 +534,7 @@ section {
         height: 170px;
         margin-left: -85px;
         h4 {
-          margin-top: 40px;
+          margin-top: 30%;
         }
       }
       &.timeline-inverted > .timeline-panel {
@@ -650,7 +688,7 @@ ul.social-buttons {
     box-shadow: none;
     border: none;
     min-height: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     h2 {
         margin-bottom: 15px;
@@ -758,6 +796,18 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .techno {
+    ul {
+      display: inline;
+    }
+
+    li {
+      width: 50%;
+      margin: 5px auto;
+    }
+  }
+}
 .no-bullet {
   list-style-type: none
 }
@@ -769,5 +819,5 @@ body {
 }
 
 .viewport-full-height {
-  height: 100vh;
+  min-height: 100vh;
 }
