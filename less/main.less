@@ -10,6 +10,7 @@ body {
 
 .text-muted {
   color: @gray-light;
+  margin-left: 10px;
 }
 
 .text-primary {
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
-  background-color: @gray-darker;
+  background-color: @gray;
   border-color: transparent;
   .navbar-brand {
     color: @theme-primary;
@@ -141,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
   .img-phone {
-    max-width: 50%;
+    max-width: 75%;
   }
 
   .separator {
@@ -173,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: @gray-darker;
+    background-color: @gray;
     padding: 10px 0;
     .navbar-brand {
       font-size: 3em;
@@ -358,7 +359,7 @@ section {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: #fed136;
+    background-color: @gray-light;
     left: 40px;
     margin-left: -1.5px;
   }
@@ -448,6 +449,7 @@ section {
     }
   }
 }
+
 
 @media (min-width: 320px) {
   .timeline {
@@ -722,35 +724,28 @@ ul.social-buttons {
     height: 75px;
     background-color: transparent;
     top: 25px;
-    right: 25px;
+    right: 15%;
     cursor: pointer;
     &:hover {
       opacity: 0.3;
     }
-    .lr {
+  }
+
+  @media (max-width: 1000px) {
+    .close-modal {
+      position: absolute;
+      width: 75px;
       height: 75px;
-      width: 1px;
-      margin-left: 35px;
-      background-color: @gray-darker;
-      transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      /* IE 9 */
-      -webkit-transform: rotate(45deg);
-      /* Safari and Chrome */
-      z-index: 1051;
-      .rl {
-        height: 75px;
-        width: 1px;
-        background-color: @gray-darker;
-        transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        /* IE 9 */
-        -webkit-transform: rotate(90deg);
-        /* Safari and Chrome */
-        z-index: 1052;
+      background-color: transparent;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.3;
       }
     }
   }
+
   .modal-backdrop {
     opacity: 0;
     display: none;
@@ -796,18 +791,18 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .techno {
-    ul {
-      display: inline;
-    }
-
-    li {
-      width: 50%;
-      margin: 5px auto;
-    }
-  }
-}
+//@media (min-width: 320px) and (max-width: 767px) {
+//  .techno {
+//    ul {
+//      display: inline;
+//    }
+//
+//    li {
+//      width: 50%;
+//      margin: 5px auto;
+//    }
+//  }
+//}
 .no-bullet {
   list-style-type: none
 }
@@ -820,4 +815,34 @@ body {
 
 .viewport-full-height {
   min-height: 100vh;
+}
+
+.technos {
+  display:inline-flex;
+  flex-wrap: wrap;
+}
+
+.technos-item {
+  background-color: #9c9c9c;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 0.95em;
+}
+
+.navbar-custom .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #a8a8a8;
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+
+.img-phone {
+  height:81px;
+  width:250px;
 }
