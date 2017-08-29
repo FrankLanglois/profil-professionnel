@@ -1,0 +1,121 @@
+// Custom Navigation Bar
+
+.navbar-custom {
+  background-color: @gray;
+  border-color: transparent;
+  .navbar-brand {
+    color: @white;
+    .script-font;
+    &:hover,
+    &:active,
+    &.active {
+      color: darken(@theme-primary, 10%);
+    }
+    &:focus {
+      color: @white;
+    }
+  }
+  .navbar-collapse {
+    border-color: fade(white, 2%);
+  }
+  .navbar-toggle {
+    background-color: @theme-primary;
+    border-color: @theme-primary;
+    .heading-font;
+    color: white;
+    font-size: 12px;
+    &:hover,
+    &:focus {
+      background-color: @theme-primary;
+    }
+  }
+  .nav {
+    li {
+      a {
+        .heading-font;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: white;
+        &:hover,
+        &:focus {
+          color: @theme-primary;
+          outline: none;
+        }
+      }
+    }
+  }
+  .navbar-nav > .active > a {
+    border-radius: 0;
+    color: white;
+    background-color: @theme-primary;
+  }
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: darken(@theme-primary, 10%);
+  }
+}
+
+.navbar-custom.affix {
+  background-color: @gray;
+  padding: 10px 0;
+  .navbar-brand {
+    font-size: 3em;
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .navbar-brand {
+    font-size: 2em;
+  }
+
+  .img-company {
+    max-width: 75%;
+  }
+
+  .separator {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+    .navbar-brand {
+      font-size: 2.5em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav > .active > a {
+      border-radius: 3px;
+    }
+  }
+  .navbar-custom.affix {
+    .navbar-brand {
+      font-size: 2em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-custom {
+    .navbar-brand {
+      position: absolute;
+      font-size: 5em;
+      top: 180px;
+      left: 155px;
+      transform: rotate(-20deg);
+    }
+  }
+}
+
