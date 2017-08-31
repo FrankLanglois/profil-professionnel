@@ -1,7 +1,7 @@
 // Custom Navigation Bar
 
 .navbar-custom {
-  background-color: @gray;
+  background-color: transparent;
   border-color: transparent;
   .navbar-brand {
     color: @white;
@@ -17,6 +17,7 @@
   }
   .navbar-collapse {
     border-color: fade(white, 2%);
+    margin-top: 25px;
   }
   .navbar-toggle {
     background-color: @theme-primary;
@@ -56,20 +57,35 @@
   }
 }
 
+.lastname {
+  margin:0 0 0 10px;
+}
+
 .navbar-custom.affix {
-  background-color: @gray;
+  background: linear-gradient(@gray, @gray-light);
   padding: 10px 0;
+
   .navbar-brand {
     font-size: 3em;
     position: static;
     transform: rotate(0deg);
+    display: inline-flex;
+  }
+  .navbar-collapse {
+    margin-top: 0;
+  }
+  .lastname {
+    margin: 0 0 0 10px;
   }
 }
+
+
 
 @media (min-width: 320px) and (max-width: 767px) {
 
   .navbar-brand {
     font-size: 2em;
+    display: inline-flex;
   }
 
   .img-company {
@@ -82,7 +98,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 965px) {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -91,10 +107,11 @@
     transition: padding 0.3s;
     border: none;
     .navbar-brand {
-      font-size: 2.5em;
+      font-size: 2.3em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      display: inline-flex;
     }
     .navbar-nav > .active > a {
       border-radius: 3px;
@@ -107,15 +124,32 @@
   }
 }
 
+@media (min-width: 966px) {
+  .navbar-custom {
+    .navbar-brand {
+      position: absolute;
+      font-size: 3em;
+      top: 30px;
+      left:95px;
+      transform: rotate(-20deg);
+    }
+    .lastname {
+      margin: 27px 0 0 70px;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .navbar-custom {
     .navbar-brand {
       position: absolute;
       font-size: 5em;
-      top: 180px;
-      left: 155px;
+      top: 60px;
+      left: 190px;
       transform: rotate(-20deg);
+    }
+    .lastname {
+      margin: 55px 0 0 117px;
     }
   }
 }
-
