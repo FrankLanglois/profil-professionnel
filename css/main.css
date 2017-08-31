@@ -7,7 +7,7 @@
   color: white;
   background-color: #a8a8a8;
   border-color: #a8a8a8;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -51,7 +51,7 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #a8a8a8;
   border-color: #a8a8a8;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -123,7 +123,7 @@ ul.social-buttons li a:active {
   outline: none;
 }
 .navbar-custom {
-  background-color: transparent;
+  background-color: #555555;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -145,7 +145,7 @@ ul.social-buttons li a:active {
 .navbar-custom .navbar-toggle {
   background-color: #a8a8a8;
   border-color: #a8a8a8;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
@@ -155,7 +155,7 @@ ul.social-buttons li a:active {
   background-color: #a8a8a8;
 }
 .navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
@@ -200,8 +200,11 @@ ul.social-buttons li a:active {
     font-size: 2em;
     display: inline-flex;
   }
-  .img-company {
-    max-width: 75%;
+  .navbar-custom.affix {
+    padding: 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 2em;
   }
   .separator {
     margin-bottom: 10px;
@@ -232,6 +235,9 @@ ul.social-buttons li a:active {
   }
 }
 @media (min-width: 966px) {
+  .navbar-custom {
+    background-color: transparent;
+  }
   .navbar-custom .navbar-brand {
     position: absolute;
     font-size: 3em;
@@ -244,6 +250,9 @@ ul.social-buttons li a:active {
   }
 }
 @media (min-width: 1200px) {
+  .navbar-custom {
+    background-color: transparent;
+  }
   .navbar-custom .navbar-brand {
     position: absolute;
     font-size: 5em;
@@ -279,7 +288,7 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
@@ -299,7 +308,7 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 75px;
@@ -321,16 +330,35 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
-}
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
+  margin-bottom: 40px;
 }
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  section {
+    font-size: xx-small;
+    padding-top: 32px;
+  }
+  section h2.section-heading {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  section h3.section-subheading {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  section p {
+    font-size: small;
+  }
+  section .portfolio-hover-content {
+    display: inline-flex;
+  }
+  section .cv-company {
+    margin: 3px 0 0 45px;
+    color: #222222;
+  }
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -538,27 +566,27 @@ section#contact .form-control:focus {
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #d1d1d1;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #d1d1d1;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #d1d1d1;
 }
 section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #d1d1d1;
@@ -572,14 +600,14 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
 }
@@ -690,20 +718,6 @@ footer ul.quicklinks {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-@media (max-width: 1000px) {
-  .portfolio-modal .close-modal {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-  }
-  .portfolio-modal .close-modal:hover {
-    opacity: 0.3;
-  }
-}
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
@@ -738,6 +752,64 @@ footer ul.quicklinks {
   height: 81px;
   width: 250px;
 }
+.fa-size {
+  font-size: 3em;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .portfolio-modal .modal-content {
+    padding: 50px 0;
+  }
+  .portfolio-modal .modal-content img {
+    margin-bottom: 0;
+  }
+  .modal-body {
+    padding: 5px;
+  }
+  .portfolio-modal .close-modal {
+    width: 70%;
+  }
+  .duration {
+    float: left;
+    font-size: 1.2em;
+  }
+  .img-company {
+    margin-left: 20%;
+    margin-top: 10px;
+    width: 150px;
+    height: 48px;
+  }
+  .img-modal {
+    width: 217px;
+    height: 70px;
+    margin-left: 20%;
+  }
+  .fa-close {
+    float: right;
+  }
+  .fa-size {
+    font-size: 1.5em;
+  }
+  .modal-open .modal {
+    margin-left: -50px;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 1000px) {
+  .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .close-modal:hover {
+    opacity: 0.3;
+  }
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -771,7 +843,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -810,4 +882,7 @@ img::-moz-selection {
 }
 .margin-bottom-30 {
   margin-bottom: 30px;
+}
+.sub-separator {
+  width: 80%;
 }

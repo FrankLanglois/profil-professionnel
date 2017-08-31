@@ -13,13 +13,7 @@ section {
     text-transform: none;
     font-style: italic;
     font-weight: 400;
-    margin-bottom: 75px;
-  }
-}
-
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -30,6 +24,35 @@ section {
   text-transform: none;
 }
 
+// Media Queries
+
+@media (min-width: 320px) and (max-width: 767px) {
+  section {
+    font-size: xx-small;
+    padding-top: 32px;
+    h2.section-heading {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    h3.section-subheading {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: small;
+    }
+
+    .portfolio-hover-content {
+      display: inline-flex;
+    }
+    .cv-company {
+      margin: 3px 0 0 45px;
+      color: @gray-darker;
+    }
+
+  }
+
+}
 
 @media (min-width: 767px) {
   #portfolio {

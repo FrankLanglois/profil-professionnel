@@ -1,7 +1,7 @@
 // Custom Navigation Bar
 
 .navbar-custom {
-  background-color: transparent;
+  background-color: @gray;
   border-color: transparent;
   .navbar-brand {
     color: @white;
@@ -79,7 +79,7 @@
   }
 }
 
-
+// Media Queries
 
 @media (min-width: 320px) and (max-width: 767px) {
 
@@ -88,8 +88,11 @@
     display: inline-flex;
   }
 
-  .img-company {
-    max-width: 75%;
+  .navbar-custom.affix {
+    padding: 0;
+    .navbar-brand {
+      font-size: 2em;
+    }
   }
 
   .separator {
@@ -126,6 +129,7 @@
 
 @media (min-width: 966px) {
   .navbar-custom {
+    background-color: transparent;
     .navbar-brand {
       position: absolute;
       font-size: 3em;
@@ -141,6 +145,7 @@
 
 @media (min-width: 1200px) {
   .navbar-custom {
+    background-color: transparent;
     .navbar-brand {
       position: absolute;
       font-size: 5em;

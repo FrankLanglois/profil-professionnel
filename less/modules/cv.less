@@ -117,20 +117,7 @@
     }
   }
 
-  @media (max-width: 1000px) {
-    .close-modal {
-      position: absolute;
-      width: 75px;
-      height: 75px;
-      background-color: transparent;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      &:hover {
-        opacity: 0.3;
-      }
-    }
-  }
+
 
   .modal-backdrop {
     opacity: 0;
@@ -173,4 +160,77 @@
 .img-company {
   height:81px;
   width:250px;
+
+}
+
+.fa-size {
+  font-size: 3em;
+}
+
+// Media Queries
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .portfolio-modal .modal-content {
+    padding: 50px 0;
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal-body {
+    padding: 5px;
+  }
+
+  .portfolio-modal .close-modal {
+    width: 70%;
+  }
+
+  .duration {
+    float: left;
+    font-size: 1.2em;
+  }
+
+  .img-company {
+    margin-left: 20%;
+    margin-top: 10px;
+    width: 150px;
+    height: 48px;
+  }
+
+  .img-modal {
+    width: 217px;
+    height: 70px;
+    margin-left: 20%;
+
+  }
+  .fa-close {
+    float: right;
+  }
+
+  .fa-size {
+    font-size: 1.5em;
+  }
+
+  .modal-open .modal {
+    margin-left: -50px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
 }
