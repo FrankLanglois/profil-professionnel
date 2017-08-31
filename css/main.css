@@ -123,7 +123,7 @@ ul.social-buttons li a:active {
   outline: none;
 }
 .navbar-custom {
-  background-color: #555555;
+  background-color: transparent;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -140,6 +140,7 @@ ul.social-buttons li a:active {
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
+  margin-top: 25px;
 }
 .navbar-custom .navbar-toggle {
   background-color: #a8a8a8;
@@ -175,18 +176,29 @@ ul.social-buttons li a:active {
   color: white;
   background-color: #8f8f8f;
 }
+.lastname {
+  margin: 0 0 0 10px;
+}
 .navbar-custom.affix {
-  background-color: #555555;
+  background: linear-gradient(#555555, #777777);
   padding: 10px 0;
 }
 .navbar-custom.affix .navbar-brand {
   font-size: 3em;
   position: static;
   transform: rotate(0deg);
+  display: inline-flex;
+}
+.navbar-custom.affix .navbar-collapse {
+  margin-top: 0;
+}
+.navbar-custom.affix .lastname {
+  margin: 0 0 0 10px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .navbar-brand {
     font-size: 2em;
+    display: inline-flex;
   }
   .img-company {
     max-width: 75%;
@@ -196,7 +208,7 @@ ul.social-buttons li a:active {
     border-bottom: 1px solid black;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 965px) {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -206,10 +218,11 @@ ul.social-buttons li a:active {
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2.5em;
+    font-size: 2.3em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    display: inline-flex;
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
@@ -218,13 +231,28 @@ ul.social-buttons li a:active {
     font-size: 2em;
   }
 }
+@media (min-width: 966px) {
+  .navbar-custom .navbar-brand {
+    position: absolute;
+    font-size: 3em;
+    top: 30px;
+    left: 95px;
+    transform: rotate(-20deg);
+  }
+  .navbar-custom .lastname {
+    margin: 27px 0 0 70px;
+  }
+}
 @media (min-width: 1200px) {
   .navbar-custom .navbar-brand {
     position: absolute;
     font-size: 5em;
-    top: 180px;
-    left: 155px;
+    top: 60px;
+    left: 190px;
     transform: rotate(-20deg);
+  }
+  .navbar-custom .lastname {
+    margin: 55px 0 0 117px;
   }
 }
 header {
@@ -780,9 +808,6 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-/*body {*/
-  /*webkit-tap-highlight-color: #a8a8a8;*/
-/*}*/
 .margin-bottom-30 {
   margin-bottom: 30px;
 }
